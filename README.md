@@ -11,7 +11,7 @@ The microphone status script (status-mic.pl) uses amixer to retrieve the Capture
 ### FontAwesome
 To really make i3status have a nice effect for volume and microphone control, you'll want to use FontAwesome (https://fortawesome.github.io/Font-Awesome/).
 
-If FontAwesome is in your distro's package manager, then just go ahead and install it from there. Otherwise, download the font from the FontAwesome website and copy the fontawesome-webfont.ttf to a new folder in /usr/share/fonts. For example: /usr/share/fonts/fontawesome/fontawesome-webfont.ttf.
+If FontAwesome is in your distro's package manager, then just go ahead and install it from there. Otherwise, download the font from the FontAwesome website and copy the fontawesome-webfont.ttf to a new folder in /usr/share/fonts. For example: /usr/share/fonts/fontawesome/fontawesome-webfont.ttf. If you can see the FontAwesome icons in the config file entries later on in this file, then you know you have FontAwesome installed correctly!
 
 If you don't want to use FontAwesome, that's ok I guess - just be sure to change the icon codes to something else, otherwise you'll just get a nice little rectangle in your status bar.
 
@@ -73,8 +73,8 @@ One day I'll make this so you can pass options to enable or disable helpers, may
 Loosely based on Ewen McNeill's ALSA Volume script, but greatly simplified as it only reads the Capture mixer fields.
 
 Adjust the output fields for the microphone display as you desire. Key variables to update are:
-* statusCapture - the string displayed before the volume when the Capture mixer is enabled. The default is FontAwesome &xf130 - microphone
-* statusMute - the string displayed before the volume when the Capture mixer is muted. The default is FontAwesome &xf131 - microphone slash
+* statusCapture - the string displayed before the volume when the Capture mixer is enabled. The default is FontAwesome &xf130 - microphone ()
+* statusMute - the string displayed before the volume when the Capture mixer is muted. The default is FontAwesome &xf131 - microphone slash ()
 * muteColor - the color code to send to i3bar when the Capture mixer is muted. The default is #FFFF00 (same as the default i3status volume color)
 
 ## Reload i3
